@@ -688,7 +688,7 @@ const adjectives = [
     "lumpy",
     "lustrous",
     "luxurious",
-    "myraid",
+    "myriad",
     "munificent",
     "modish",
     "mad",
