@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Lobster&family=Roboto:wght@100;300;400&family=Sacramento&display=swap');
+
+body {
+    margin: 0;
+}
+
+#reload {
+    position: absolute;
+    background-color: #515151;
+    padding: 8px 10px 8px 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    top: 10px;
+    left: 10px;
+    color: darkgray;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+#reload:hover {
+    box-shadow: 3px 3px 5px black;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #19191b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 4em 2em;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #5280ff,
+        0 0 0.8rem #5280ff,
+        0 0 2.8rem #5280ff,
+        inset 0 0 1.3rem #5280ff;
+}
+
+.heading>h1 {
+    margin: 10px;
+}
+
+.heading>h1:not(.neonText) {
+    color: white;
+    font-weight: 400;
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    animation-delay: 5s;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 10px #B026FF,
+        0 0 21px #B026FF,
+        0 0 42px #B026FF,
+        0 0 82px #B026FF,
+        0 0 92px #B026FF,
+        0 0 102px #B026FF,
+        0 0 151px #B026FF;
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #B026FF,
+            0 0 21px #B026FF,
+            0 0 42px #B026FF,
+            0 0 82px #B026FF,
+            0 0 92px #B026FF,
+            0 0 102px #B026FF,
+            0 0 151px #B026FF;
+
+    }
+
+    20%,
+    24% {
+        text-shadow: none;
+    }
+}
+
+.neonTextBlue {
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 10px #5280ff,
+        0 0 21px #5280ff,
+        0 0 42px #5280ff,
+        0 0 82px #5280ff,
+        0 0 92px #5280ff,
+        0 0 102px #5280ff,
+        0 0 151px #5280ff;
+}
+
+@keyframes pulsate {
+
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #5280ff,
+            0 0 80px #5280ff,
+            0 0 90px #5280ff,
+            0 0 100px #5280ff,
+            0 0 150px #5280ff;
+
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 18px #fff,
+            0 0 38px #5380fd,
+            0 0 73px #5380fd,
+            0 0 80px #5380fd,
+            0 0 94px #5380fd,
+            0 0 140px #5380fd;
+    }
+}
